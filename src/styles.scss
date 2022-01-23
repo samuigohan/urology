@@ -27,15 +27,15 @@ a {
 }
 
 svg {
-  display: none;
-  animation: fadeIn .1s ease-in-out;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
   path {
     fill: $color-flat;
     stroke: $color-flat;
   }
 }
 svg.loaded {
-  display: block !important;
+  opacity: 1;
 }
 
 section {
