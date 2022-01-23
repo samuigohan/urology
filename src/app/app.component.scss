@@ -1,0 +1,59 @@
+@import "../theme.scss";
+
+.parallax-section {
+  opacity: 1;
+  position: relative;
+  transition: margin-top 0.35s ease-in-out;
+  width: 100%;
+  background-position: 50% 0;
+  height: 400px;
+  background-image: url("/assets/images/landing_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: $box-shadow;
+  margin-bottom: 16px;
+  transition: height 0.5s cubic-bezier(0.67, 0.04, 0.22, 1), opacity 0.5s cubic-bezier(0.67, 0.04, 0.22, 1);
+
+  &.subpage {
+    height: 0px;
+    opacity: 0;
+  }
+}
+
+.main-title {
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $color-txt-pri;
+  font-weight: 900;
+  font-size: 72px;
+  text-shadow: $text-shadow;
+
+  transition: top 0.5s cubic-bezier(0.67, 0.04, 0.22, 1), font-size 0.5s cubic-bezier(0.67, 0.04, 0.22, 1);
+
+  &.subpage {
+    font-size: 24px;
+    top: 24px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  header,
+  footer {
+    width: 100%;
+    height: 48px;
+    background-color: $color-bg-bars;
+    text-align: center;
+    line-height: 48px;
+  }
+
+  .content {
+    background-color: $color-bg-pri;
+    // Stretch the content so that page always fills the screen:
+    flex: 1 1 auto;
+  }
+}

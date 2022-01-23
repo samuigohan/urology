@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <header>
+
+  </header>
+  <div class="content">
+    <div class="parallax-section" [ngClass]="{ 'subpage': subpage }">
+    </div>
+    <div class="main-title" [ngClass]="{ 'subpage': subpage }">
+      <a [routerLink]="['/']">
+        UROLOGIJA.HR
+    </a>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+  <footer>
+    Copyright, contact etc.
+  </footer>
+</div>

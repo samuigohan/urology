@@ -1,0 +1,73 @@
+@import "theme.scss";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  padding: 0px;
+  margin: 0px;
+  color: $color-txt-pri;
+  &.no-scroll {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+svg {
+  display: none;
+  animation: fadeIn .1s ease-in-out;
+  path {
+    fill: $color-flat;
+    stroke: $color-flat;
+  }
+}
+svg.loaded {
+  display: block !important;
+}
+
+section {
+  padding: $padding-std;
+  background-color: $color-bg-pri;
+  max-width: 1280px;
+  margin: 0 auto;
+  &.secondary {
+    background-color: $color-bg-sec;
+    max-width: unset;
+    width: 100%;
+    > div {
+      max-width: calc(1280px - 80px);
+      margin: 0 auto;
+    }
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 56px;
+    &::after {
+      content: " ";
+      border-bottom: 2px solid $color-txt-pri;
+      width: 40px;
+      height: 1px;
+      position: absolute;
+      left: 50%;
+      top: calc(100% + 16px);
+      transform: translateX(-50%);
+    }
+  }
+}
