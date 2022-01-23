@@ -288,7 +288,7 @@ var FaqComponent = /** @class */ (function () {
         if (!this.faqCategory || !this.faqSubcategory) {
             return;
         }
-        this.http.get("urology/assets/faq/" + this.faqCategory + "/" + this.faqSubcategory + ".html", { responseType: 'text' }).subscribe(function (response) {
+        this.http.get("assets/faq/" + this.faqCategory + "/" + this.faqSubcategory + ".html", { responseType: 'text' }).subscribe(function (response) {
             _this.html = response.toString();
         });
         var self = this;
