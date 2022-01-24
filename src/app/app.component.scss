@@ -29,21 +29,21 @@
   font-weight: 900;
   text-shadow: $text-shadow;
   transition: top 0.5s cubic-bezier(0.67, 0.04, 0.22, 1), font-size 0.5s cubic-bezier(0.67, 0.04, 0.22, 1);
-  font-size: $font-size-lg;
   &.subpage {
     font-size: $font-size-md;
     top: 24px;
   }
-  @media screen and (max-width: 540px) {
+  font-size: $font-size-nm;
+  @media screen and (min-width: 384px) {
     font-size: $font-size-md;
   }
-  @media screen and (max-width: 960px) {
+  @media screen and (min-width: 540px) {
     font-size: $font-size-lg;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 960px) {
     font-size: $font-size-xl;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     font-size: $font-size-xxl;
   }
 }

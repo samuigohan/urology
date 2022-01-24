@@ -1,138 +1,141 @@
-@import '../../../theme.scss';
+@import "../../../theme.scss";
 
 .icon-list {
-    margin: 40px;
+  margin: 40px;
 }
 
-.icon-list>div {
-    margin: 0 auto;
-    min-width: 64px;
-    vertical-align: top;
-    white-space: nowrap;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.icon-list .flex>div>div {
-    width: 200px;
-    height: 200px;
-    padding-top: 20px;
-    /* border: 1px solid #444; */
-    /*box-shadow: 0px 0px 15px rgb(0 0 0 / 50%);*/
-    border-radius: 12px;
-    cursor: pointer;
-}
 
 :host::ng-deep {
-    .icon-list svg {
-        width: 64px;
-        height: 64px;
-        position: absolute;
-        top: 48px;
-        left: 68px;
-        /*transform: translate(-75%, -50%);*/
-        transition: top .35s .3s cubic-bezier(.67, .04, .22, 1), left .35s .3s cubic-bezier(.67, .04, .22, 1), width .35s .3s cubic-bezier(.67, .04, .22, 1), height .35s .3s cubic-bezier(.67, .04, .22, 1);
-    }
-    .icon-list .flex>div>div:hover svg {
-        transition: top .35s .3s cubic-bezier(.67, .04, .22, 1), left .35s .3s cubic-bezier(.67, .04, .22, 1), width .35s .3s cubic-bezier(.67, .04, .22, 1), height .35s .3s cubic-bezier(.67, .04, .22, 1);
-        width: 16px;
-        height: 16px;
-        top: 16px;
-        left: 16px;
+  .icon-list svg {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 48px;
+    left: 68px;
+    /*transform: translate(-75%, -50%);*/
+    transition: top 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1), left 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1),
+      width 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1), height 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1);
+  }
+  .icon-list .flex > div > div:hover svg {
+    transition: top 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1), left 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1),
+      width 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1), height 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1);
+    width: 16px;
+    height: 16px;
+    top: 16px;
+    left: 16px;
 
-        path {
-            stroke: $color-hl-sec;
-            fill: $color-hl-sec;
-        }
+    path {
+      stroke: $color-hl-sec;
+      fill: $color-hl-sec;
     }
+  }
 }
 
 .icon-list .title {
-    text-align: center;
-    position: absolute;
-    top: 128px;
-    transition: top .35s .3s cubic-bezier(.67, .04, .22, 1), left .35s .3s cubic-bezier(.67, .04, .22, 1), width .35s .3s cubic-bezier(.67, .04, .22, 1);
+  text-align: center;
+  position: absolute;
+  top: 128px;
+  transition: top 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1), left 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1),
+    width 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1);
 }
 
 .title.kidney {
-    left: 66px;
+  left: 66px;
 }
 
 .title.ureter {
-    left: 29px;
+  left: 29px;
 }
 
 .title.urethra {
-    left: 41px;
+  left: 41px;
 }
 
 .title.bladder {
-    left: 60px;
+  left: 60px;
 }
 
 .title.prostate {
-    left: 60px;
+  left: 60px;
 }
 
 .title.testis {
-    left: 75px;
+  left: 75px;
 }
 
 .title.penis {
-    left: 77px;
+  left: 77px;
 }
 
 .icon-list ul li:hover {
-    color: #1063cf;
+  color: #1063cf;
 }
 
-
-.icon-list .flex>div>div:hover .title {
-    transition: top .35s .3s cubic-bezier(.67, .04, .22, 1), left .35s .3s cubic-bezier(.67, .04, .22, 1), width .35s .3s cubic-bezier(.67, .04, .22, 1);
-    top: 15px;
-    left: 40px;
-    color: $color-hl-sec;
+.icon-list .flex > div > div:hover .title {
+  transition: top 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1), left 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1),
+    width 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1);
+  top: 15px;
+  left: 40px;
+  color: $color-hl-sec;
 }
 
 .icon-list ul {
-    opacity: 0;
-    padding: 0px;
-    text-align: left;
-    margin-top: 24px;
-    transition: opacity .35s .3s cubic-bezier(.67, .04, .22, 1);
-    width: 160px;
-    overflow: visible;
-    margin-left: 18px;
-    line-height: 125%;
-    list-style-type: none;
+  opacity: 0;
+  padding: 0px;
+  text-align: left;
+  margin-top: 24px;
+  transition: opacity 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1);
+  width: 160px;
+  overflow: visible;
+  margin-left: 18px;
+  line-height: 125%;
+  list-style-type: none;
 }
 
 .icon-list ul li {
-    padding: 0px;
-    font-size: $font-size-sm;
-    overflow: visible;
+  padding: 0px;
+  font-size: $font-size-sm;
+  overflow: visible;
 }
 
-.icon-list .flex>div>div:hover ul {
-    opacity: 1;
-    transition: opacity .35s .3s cubic-bezier(.67, .04, .22, 1);
-    transition-delay: .5s;
+.icon-list .flex > div > div:hover ul {
+  opacity: 1;
+  transition: opacity 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1);
+  transition-delay: 0.5s;
 }
 
 .flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1024px;
-    margin-bottom: 40px;
-    margin-bottom: 32px !important;
-}
-
-.flex>div {
-    width: 25%;
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: space-between;
+  max-width: 1024px;
+  margin-bottom: 40px;
+  margin-bottom: 32px !important;  
+  margin: 0 auto;
+  text-transform: uppercase;
+  > div {
     position: relative;
-}
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
 
-.flex svg {
-    max-width: 90px;
+    @media screen and (max-width: 960px) {
+        width: 50%;
+    }
+    @media screen and (max-width: 540px) {
+        width: 100%;
+    }
+
+    > div {
+        position: relative;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        padding-top: 20px;
+        /* border: 1px solid #444; */
+        /*box-shadow: 0px 0px 15px rgb(0 0 0 / 50%);*/
+        border-radius: 12px;
+        cursor: pointer;
+      }
+  }
 }
