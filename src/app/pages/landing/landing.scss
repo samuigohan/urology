@@ -1,8 +1,5 @@
 @import '../../../theme.scss';
 
-
-
-
 .icon-list {
     margin: 40px;
 }
@@ -112,7 +109,7 @@
 
 .icon-list ul li {
     padding: 0px;
-    font-size: 12px;
+    font-size: $font-size-sm;
     overflow: visible;
 }
 

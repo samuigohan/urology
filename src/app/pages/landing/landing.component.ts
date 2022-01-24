@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 import * as $ from 'jquery';
 
 @Component({
@@ -8,7 +9,7 @@ import * as $ from 'jquery';
 })
 
 export class Landing {
-    constructor() {
+    constructor(private router: Router) {
     }
 
     ngOnInit() {
@@ -32,5 +33,13 @@ export class Landing {
                 backgroundPosition: coords
             });
         }
+    }
+
+    public navigate(route: string) {
+        let self = this;
+        $('html, body').stop().animate({ scrollTop: 0 }, 250, 'swing', function () {
+            self.router.navigateByUrl(route);
+        });
+
     }
 }
