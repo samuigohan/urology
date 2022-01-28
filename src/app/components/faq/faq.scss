@@ -14,9 +14,7 @@
     transform: translateX(-100%);
   }
 
-  @media screen and (min-width: 720px) {
-    width: 90vw;
-  }
+  width: calc(100vw - 40px);
   @media screen and (min-width: 960px) {
     width: 80vw;
   }
@@ -41,7 +39,7 @@
     content: " ";
     height: 48px;
     width: 40px;
-    background: #1063cf;
+    background: $color-hl-sec;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     line-height: 48px;

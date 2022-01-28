@@ -21,5 +21,22 @@ export class AppComponent {
         }
       }
     });
+
+    let self = this;
+    window.onscroll = function () { self.windowScrolled() };
+  }
+
+  
+  public windowScrolled() {
+    var btn = $('#btnScrollToTop');
+    if ($(window).scrollTop() > 400) {
+      $('#btnScrollToTop').addClass('displayed');
+    } else {
+      $('#btnScrollToTop').removeClass('displayed');
+    }
+  }
+
+  public scrollToTop() {
+    $('html, body').stop().animate({ scrollTop: 0 }, 250, 'swing', function () {});
   }
 }
