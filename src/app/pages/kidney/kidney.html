@@ -1,68 +1,14 @@
 <section>
     <div class="page-title">Bubreg</div>
     <div class="page-menu">
-        <div class="selected">Građa i funkcija</div>
-        <div>Karcinom</div>
-        <div>Upala</div>
-        <div>Kamenci</div>
-        <div>Ciste</div>
-        <div>Transplantacija</div>
+        <a [routerLink]="['/kidney/general']" [routerLinkActive]="['active']">Građa i funkcija</a>
+        <a [routerLink]="['/kidney/cancer']" [routerLinkActive]="['active']">Karcinom</a>
+        <a [routerLink]="['/kidney/inflamation']" [routerLinkActive]="['active']">Upala</a>
+        <a [routerLink]="['/kidney/stones']" [routerLinkActive]="['active']">Kamenci</a>
+        <a [routerLink]="['/kidney/cists']" [routerLinkActive]="['active']">Ciste</a>
+        <a [routerLink]="['/kidney/transplant']" [routerLinkActive]="['active']">Transplantacija</a>
     </div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut
-    accumsan
-    lacus. Vestibulum sit amet mauris ante. Pellentesque sed nibh neque.
-    Morbi
-    et luctus felis. Aliquam et risus molestie, sagittis nibh sit amet,
-    tincidunt turpis. Vivamus eget lorem ex. Integer quis arcu enim.
-    <br><br>
-    Nunc sed nunc non massa vulputate tincidunt. Aenean eget ipsum non nulla
-    scelerisque viverra. Sed consectetur sapien sed ipsum suscipit, vitae
-    auctor
-    enim euismod. Duis eget turpis nisi. Nunc et turpis et mauris lobortis
-    sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-    aliquet viverra molestie. Curabitur ipsum eros, suscipit id neque ut,
-    semper
-    euismod ante. Suspendisse scelerisque lobortis lorem bibendum pulvinar.
-    Vestibulum eu augue orci.
-    <br><br>
-    Aenean augue mauris, dictum vitae dui non, blandit mollis massa. Etiam
-    iaculis porta justo, nec scelerisque risus euismod vel. Mauris placerat
-    risus pretium ex fringilla mollis. Donec elit elit, auctor sollicitudin
-    tristique sed, efficitur eget massa. Nulla facilisi. Aliquam sit amet
-    elit
-    in ex elementum cursus. Aliquam dictum iaculis risus in facilisis. Nunc
-    ac
-    leo et libero condimentum dignissim sodales a dui. Vivamus ornare
-    faucibus
-    arcu, ut mattis est auctor in. Etiam id lorem vitae ligula tincidunt
-    imperdiet id non diam. Nam vel lectus non nisl scelerisque iaculis.
-    Pellentesque lorem turpis, commodo sed porttitor maximus, malesuada quis
-    nisl. Curabitur elementum, dui a varius blandit, est ante placerat
-    massa, ac
-    ullamcorper mi risus id metus.
-    <img src="assets/images/kidney.jpg">
-    <div class="image-label">Slika 1. Donec elit elit, auctor sollicitudin tristique sed.</div>
-    
-    Nunc sed nunc non massa vulputate tincidunt. Aenean eget ipsum non nulla
-    scelerisque viverra. Sed consectetur sapien sed ipsum suscipit, vitae
-    auctor
-    enim euismod. Duis eget turpis nisi. Nunc et turpis et mauris lobortis
-    sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-    aliquet viverra molestie. Curabitur ipsum eros, suscipit id neque ut,
-    semper
-    euismod ante. Suspendisse scelerisque lobortis lorem bibendum pulvinar.
-    Vestibulum eu augue orci.
-    <br><br>
-    Aenean augue mauris, dictum vitae dui non, blandit mollis massa. Etiam
-    iaculis porta justo, nec scelerisque risus euismod vel. Mauris placerat
-    risus pretium ex fringilla mollis. Donec elit elit, auctor sollicitudin
-    tristique sed, efficitur eget massa. Nulla facilisi. Aliquam sit amet
-    elit
-    in ex elementum cursus. Aliquam dictum iaculis risus in facilisis. Nunc
-    ac
-    leo et libero condimentum dignissim sodales a dui. Vivamus ornare
-    faucibus
-    arcu, ut mattis est auctor in.
+    <div class="page-content" *ngIf="html" [innerHTML]="html">
+    </div>
 </section>
-<router-outlet></router-outlet>
-<faq [faqCategory]="'kidney'" [faqSubcategory]="'cancer'"></faq>
+<faq [faqCategory]="faqCategory"></faq>

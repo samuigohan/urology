@@ -12,6 +12,9 @@
 
   &.displayed {
     transform: translateX(-100%);
+    .faq-button {
+      opacity: 1;
+    }
   }
 
   width: calc(100vw - 40px);

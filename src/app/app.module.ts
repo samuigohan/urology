@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { LandingModule } from './pages/landing/landing.module';
 import { KidneyModule } from './pages/kidney/kidney.module';
+import { ApiService } from './api.service';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { KidneyModule } from './pages/kidney/kidney.module';
   ],
   providers: [
     HttpClientModule,
+    ApiService,
   ],
   bootstrap: [AppComponent]
 })

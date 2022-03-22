@@ -31,12 +31,16 @@ export class FaqComponent {
     }
 
     ngOnChanges() {
-        if (!this.faqCategory || !this.faqSubcategory) {
+        if (!this.faqCategory) {
             return;
         }
-        this.http.get(`assets/faq/${this.faqCategory}/${this.faqSubcategory}.html`, { responseType: 'text' }).subscribe(
+        this.http.get(`assets/html/${this.faqCategory}_faq.html`, { responseType: 'text' }).subscribe(
             (response: String) => {
                 this.html = response.toString();
+            },
+            (error: any) => {
+                this.html = null;
+                this.displayed = false;
             }
         );
 
