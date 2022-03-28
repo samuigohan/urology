@@ -4,6 +4,7 @@ import { Kidney } from './kidney.component';
 import { KidneyRoutingModule } from './kidney.routing';
 import { FaqComponent } from 'src/app/components/faq/faq.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from 'src/app/shared.module';
 
 @NgModule({
   exports: [
@@ -11,10 +12,10 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   declarations: [
     Kidney,
-    FaqComponent,
   ],
   imports: [
     CommonModule,
+    SharedModule,
     KidneyRoutingModule,
     HttpClientModule,
   ],

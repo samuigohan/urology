@@ -11,14 +11,24 @@
                     <div class="title kidney">Bubreg</div>
                     <div class="submenu">
                         <ul>
-                            <li (click)="navigate('kidney/general')">
-                                Građa i funkcija
+                            <li>
+                                <a [routerLink]="'kidney/general'">Građa i funkcija</a>
                             </li>
-                            <li>Karcinom</li>
-                            <li>Upala</li>
-                            <li>Kamenci</li>
-                            <li>Ciste</li>
-                            <li>Transplantacija</li>
+                            <li>
+                                <a [routerLink]="'kidney/cancer'">Karcinom</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'kidney/inflamation'">Upala</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'kidney/stones'">Kamenci</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'kidney/cists'">Ciste</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'kidney/transplant'">Transplantacija</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -29,9 +39,15 @@
                     <div class="title urethra">Mokraćovod</div>
                     <div class="submenu">
                         <ul>
-                            <li>Građa i funkcija</li>
-                            <li>Karcinom</li>
-                            <li>Kamenci</li>
+                            <li>
+                                <a [routerLink]="'urethra/general'">Građa i funkcija</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'urethra/cancer'">Karcinom</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'urethra/stones'">Kamenci</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -42,10 +58,18 @@
                     <div class="title bladder">Mjerhur</div>
                     <div class="submenu">
                         <ul>
-                            <li>Građa i funkcija</li>
-                            <li>Karcinom</li>
-                            <li>Upala</li>
-                            <li>Kamenci</li>
+                            <li>
+                                <a [routerLink]="'bladder/general'">Građa i funkcija</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'bladder/cancer'">Karcinom</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'bladder/inflamation'">Upala</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'bladder/stones'">Kamenci</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

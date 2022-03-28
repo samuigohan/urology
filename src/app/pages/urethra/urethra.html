@@ -1,0 +1,11 @@
+<section>
+    <div class="page-title">Mokraćovod</div>
+    <div class="page-menu">
+        <a [routerLink]="['/urethra/general']" [routerLinkActive]="['active']">Građa i funkcija</a>
+        <a [routerLink]="['/urethra/cancer']" [routerLinkActive]="['active']">Karcinom</a>
+        <a [routerLink]="['/urethra/stones']" [routerLinkActive]="['active']">Kamenci</a>
+    </div>
+    <div class="page-content" *ngIf="html" [innerHTML]="html">
+    </div>
+</section>
+<faq [faqCategory]="faqCategory"></faq>
