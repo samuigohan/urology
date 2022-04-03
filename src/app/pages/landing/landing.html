@@ -80,10 +80,18 @@
                     <div class="title prostate">Prostata</div>
                     <div class="submenu">
                         <ul>
-                            <li>Građa i funkcija</li>
-                            <li>Karcinom</li>
-                            <li>Upala</li>
-                            <li>Benigno povećanje</li>
+                            <li>
+                                <a [routerLink]="'prostate/general'">Građa i funkcija</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'prostate/cancer'">Karcinom</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'prostate/inflamation'">Upala</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'prostate/enlargement'">Benigno povećanje</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,12 @@
+<section>
+    <div class="page-title">Mokraćni mjehur</div>
+    <div class="page-menu">
+        <a [routerLink]="['/prostate/general']" [routerLinkActive]="['active']">Građa i funkcija</a>
+        <a [routerLink]="['/prostate/cancer']" [routerLinkActive]="['active']">Karcinom</a>
+        <a [routerLink]="['/prostate/inflamation']" [routerLinkActive]="['active']">Upala</a>
+        <a [routerLink]="['/prostate/enalargement']" [routerLinkActive]="['active']">Beningno povećanje</a>
+    </div>
+    <div class="page-content" *ngIf="html" [innerHTML]="html">
+    </div>
+</section>
+<faq [faqCategory]="faqCategory"></faq>
