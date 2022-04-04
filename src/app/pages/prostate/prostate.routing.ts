@@ -10,7 +10,7 @@ const routes: Routes = [
       { path: 'general', component: Prostate },
       { path: 'cancer', component: Prostate },
       { path: 'inflamation', component: Prostate },
-      { path: 'stones', component: Prostate },
+      { path: 'enlargement', component: Prostate },
     ],
   },
 ];
