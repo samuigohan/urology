@@ -480,6 +480,7 @@ let Kidney = class Kidney {
     }
     ngOnInit() {
         this.getPage(this.router.url);
+        this.faqCategory = this.router.url;
     }
     getPage(url) {
         this.api.getPage(url).subscribe((response) => {

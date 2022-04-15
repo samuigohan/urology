@@ -45,6 +45,7 @@ var Prostate = /** @class */ (function () {
     }
     Prostate.prototype.ngOnInit = function () {
         this.getPage(this.router.url);
+        this.faqCategory = this.router.url;
     };
     Prostate.prototype.getPage = function (url) {
         var _this = this;

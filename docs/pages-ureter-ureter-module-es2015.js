@@ -44,6 +44,7 @@ let Ureter = class Ureter {
     }
     ngOnInit() {
         this.getPage(this.router.url);
+        this.faqCategory = this.router.url;
     }
     getPage(url) {
         this.api.getPage(url).subscribe((response) => {

@@ -45,6 +45,7 @@ var Testis = /** @class */ (function () {
     }
     Testis.prototype.ngOnInit = function () {
         this.getPage(this.router.url);
+        this.faqCategory = this.router.url;
     };
     Testis.prototype.getPage = function (url) {
         var _this = this;

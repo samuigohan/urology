@@ -45,6 +45,7 @@ var Bladder = /** @class */ (function () {
     }
     Bladder.prototype.ngOnInit = function () {
         this.getPage(this.router.url);
+        this.faqCategory = this.router.url;
     };
     Bladder.prototype.getPage = function (url) {
         var _this = this;

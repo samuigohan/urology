@@ -27,6 +27,7 @@ export class Penis {
 
     ngOnInit() {
         this.getPage(this.router.url);
+        this.faqCategory = this.router.url;
     }
 
     private getPage(url: string) {

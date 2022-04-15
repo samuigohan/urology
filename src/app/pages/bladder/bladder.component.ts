@@ -16,7 +16,6 @@ export class Bladder {
 
     constructor(private api: ApiService,
         private router: Router) {
-
         router.events.subscribe((event: RouterEvent) => {
             if (event instanceof NavigationStart) {
                 this.getPage(event.url);
@@ -27,6 +26,7 @@ export class Bladder {
 
     ngOnInit() {
         this.getPage(this.router.url);
+        this.faqCategory = this.router.url;
     }
 
     private getPage(url: string) {

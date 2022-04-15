@@ -45,6 +45,7 @@ var Penis = /** @class */ (function () {
     }
     Penis.prototype.ngOnInit = function () {
         this.getPage(this.router.url);
+        this.faqCategory = this.router.url;
     };
     Penis.prototype.getPage = function (url) {
         var _this = this;

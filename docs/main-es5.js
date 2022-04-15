@@ -491,6 +491,7 @@ var Kidney = /** @class */ (function () {
     }
     Kidney.prototype.ngOnInit = function () {
         this.getPage(this.router.url);
+        this.faqCategory = this.router.url;
     };
     Kidney.prototype.getPage = function (url) {
         var _this = this;

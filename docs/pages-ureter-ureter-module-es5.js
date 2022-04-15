@@ -45,6 +45,7 @@ var Ureter = /** @class */ (function () {
     }
     Ureter.prototype.ngOnInit = function () {
         this.getPage(this.router.url);
+        this.faqCategory = this.router.url;
     };
     Ureter.prototype.getPage = function (url) {
         var _this = this;
