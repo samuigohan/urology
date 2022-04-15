@@ -1,0 +1,12 @@
+<section>
+    <div class="page-title">Mokraćna cijev</div>
+    <div class="page-menu">
+        <a [routerLink]="['/ureter/general']" [routerLinkActive]="['active']">Građa i funkcija</a>
+        <a [routerLink]="['/ureter/cancer']" [routerLinkActive]="['active']">Karcinom</a>
+        <a [routerLink]="['/ureter/inflammation']" [routerLinkActive]="['active']">Upala</a>
+        <a [routerLink]="['/ureter/constriction']" [routerLinkActive]="['active']">Suženje</a>
+    </div>
+    <div class="page-content" *ngIf="html" [innerHTML]="html">
+    </div>
+</section>
+<faq [faqCategory]="faqCategory"></faq>

@@ -1,0 +1,15 @@
+<section>
+    <div class="page-title">Testis</div>
+    <div class="page-menu">
+        <a [routerLink]="['/testis/general']" [routerLinkActive]="['active']">Građa i funkcija</a>
+        <a [routerLink]="['/testis/cancer']" [routerLinkActive]="['active']">Karcinom</a>
+        <a [routerLink]="['/testis/inflammation']" [routerLinkActive]="['active']">Upala</a>
+        <a [routerLink]="['/testis/hydrocele']" [routerLinkActive]="['active']">Hidrokela i spermatokela</a>
+        <a [routerLink]="['/testis/varicocele']" [routerLinkActive]="['active']">Varikokela</a>
+        <a [routerLink]="['/testis/torsion']" [routerLinkActive]="['active']">Torzija testisa</a>
+        <a [routerLink]="['/testis/infertility']" [routerLinkActive]="['active']">Neplodnost</a>
+    </div>
+    <div class="page-content" *ngIf="html" [innerHTML]="html">
+    </div>
+</section>
+<faq [faqCategory]="faqCategory"></faq>

@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\r\n    <div class=\"page-title\">Mokraćni mjehur</div>\r\n    <div class=\"page-menu\">\r\n        <a [routerLink]=\"['/bladder/general']\" [routerLinkActive]=\"['active']\">Građa i funkcija</a>\r\n        <a [routerLink]=\"['/bladder/cancer']\" [routerLinkActive]=\"['active']\">Karcinom</a>\r\n        <a [routerLink]=\"['/bladder/inflamation']\" [routerLinkActive]=\"['active']\">Upala</a>\r\n        <a [routerLink]=\"['/bladder/stones']\" [routerLinkActive]=\"['active']\">Kamenci</a>\r\n    </div>\r\n    <div class=\"page-content\" *ngIf=\"html\" [innerHTML]=\"html\">\r\n    </div>\r\n</section>\r\n<faq [faqCategory]=\"faqCategory\"></faq>"
+module.exports = "<section>\r\n    <div class=\"page-title\">Mokraćni mjehur</div>\r\n    <div class=\"page-menu\">\r\n        <a [routerLink]=\"['/bladder/general']\" [routerLinkActive]=\"['active']\">Građa i funkcija</a>\r\n        <a [routerLink]=\"['/bladder/cancer']\" [routerLinkActive]=\"['active']\">Karcinom</a>\r\n        <a [routerLink]=\"['/bladder/inflammation']\" [routerLinkActive]=\"['active']\">Upala</a>\r\n        <a [routerLink]=\"['/bladder/stones']\" [routerLinkActive]=\"['active']\">Kamenci</a>\r\n    </div>\r\n    <div class=\"page-content\" *ngIf=\"html\" [innerHTML]=\"html\">\r\n    </div>\r\n</section>\r\n<faq [faqCategory]=\"faqCategory\"></faq>"
 
 /***/ }),
 
@@ -148,7 +148,7 @@ var routes = [
         children: [
             { path: 'general', component: _bladder_component__WEBPACK_IMPORTED_MODULE_3__["Bladder"] },
             { path: 'cancer', component: _bladder_component__WEBPACK_IMPORTED_MODULE_3__["Bladder"] },
-            { path: 'inflamation', component: _bladder_component__WEBPACK_IMPORTED_MODULE_3__["Bladder"] },
+            { path: 'inflammation', component: _bladder_component__WEBPACK_IMPORTED_MODULE_3__["Bladder"] },
             { path: 'stones', component: _bladder_component__WEBPACK_IMPORTED_MODULE_3__["Bladder"] },
         ],
     },

@@ -18,7 +18,7 @@
                                 <a [routerLink]="'kidney/cancer'">Karcinom</a>
                             </li>
                             <li>
-                                <a [routerLink]="'kidney/inflamation'">Upala</a>
+                                <a [routerLink]="'kidney/inflammation'">Upala</a>
                             </li>
                             <li>
                                 <a [routerLink]="'kidney/stones'">Kamenci</a>
@@ -65,7 +65,7 @@
                                 <a [routerLink]="'bladder/cancer'">Karcinom</a>
                             </li>
                             <li>
-                                <a [routerLink]="'bladder/inflamation'">Upala</a>
+                                <a [routerLink]="'bladder/inflammation'">Upala</a>
                             </li>
                             <li>
                                 <a [routerLink]="'bladder/stones'">Kamenci</a>
@@ -87,7 +87,7 @@
                                 <a [routerLink]="'prostate/cancer'">Karcinom</a>
                             </li>
                             <li>
-                                <a [routerLink]="'prostate/inflamation'">Upala</a>
+                                <a [routerLink]="'prostate/inflammation'">Upala</a>
                             </li>
                             <li>
                                 <a [routerLink]="'prostate/enlargement'">Benigno povećanje</a>
@@ -105,16 +105,26 @@
                     <div class="submenu">
                         <ul>
                             <li>
-                                <a [routerLink]="['testis']">
-                                    Građa i funkcija
-                                </a>
+                                <a [routerLink]="'testis/general'">Građa i funkcija</a>
                             </li>
-                            <li>Karcinom</li>
-                            <li>Upala</li>
-                            <li>Hidrokela i spermatokela</li>
-                            <li>Varikokela</li>
-                            <li>Torzija testisa</li>
-                            <li>Neplodnost</li>
+                            <li>
+                                <a [routerLink]="'testis/cancer'">Karcinom</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'testis/inflammation'">Upala</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'testis/hydrocele'">Hidrokela i spermatokela</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'testis/varicocele'">Varikokela</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'testis/torsion'">Torzija testisa</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'testis/infertility'">Neplodnost</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -125,12 +135,24 @@
                     <div class="title penis">Penis</div>
                     <div class="submenu">
                         <ul>
-                            <li>Građa i funkcija</li>
-                            <li>Karcinom</li>
-                            <li>Fimoza</li>
-                            <li>Kratki frenulum</li>
-                            <li>Induratio penis plastica</li>
-                            <li>Spolna nemoć</li>
+                            <li>
+                                <a [routerLink]="'penis/general'">Anatomija i funkcija</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'penis/cancer'">Karcinom</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'penis/phimosis'">Fimoza</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'penis/frenulum'">Frenulum breve</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'penis/induratio'">Induratio penis plastica</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="'penis/disfunction'">Spolna nemoć</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -141,10 +163,20 @@
                     <div class="title ureter">Mokraćna cijev</div>
                     <div class="submenu">
                         <ul>
-                            <li>Građa i funkcija</li>
-                            <li>Karcinom</li>
-                            <li>Upala</li>
-                            <li>Suženje</li>
+                            <ul>
+                                <li>
+                                    <a [routerLink]="'ureter/general'">Građa i funkcija</a>
+                                </li>
+                                <li>
+                                    <a [routerLink]="'ureter/cancer'">Karcinom</a>
+                                </li>
+                                <li>
+                                    <a [routerLink]="'ureter/inflammation'">Upala</a>
+                                </li>
+                                <li>
+                                    <a [routerLink]="'ureter/constriction'">Suženje</a>
+                                </li>
+                            </ul>
                         </ul>
                     </div>
                 </div>

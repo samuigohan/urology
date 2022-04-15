@@ -1,0 +1,14 @@
+<section>
+    <div class="page-title">Penis</div>
+    <div class="page-menu">
+        <a [routerLink]="['/penis/general']" [routerLinkActive]="['active']">Anatomija i funkcija</a>
+        <a [routerLink]="['/penis/cancer']" [routerLinkActive]="['active']">Karcinom</a>
+        <a [routerLink]="['/penis/phimosis']" [routerLinkActive]="['active']">Fimoza</a>
+        <a [routerLink]="['/penis/frenulum']" [routerLinkActive]="['active']">Frenulum breve</a>
+        <a [routerLink]="['/penis/induratio']" [routerLinkActive]="['active']">Induratio penis plastica</a>
+        <a [routerLink]="['/penis/disfunction']" [routerLinkActive]="['active']">Spolna nemoć</a>
+    </div>
+    <div class="page-content" *ngIf="html" [innerHTML]="html">
+    </div>
+</section>
+<faq [faqCategory]="faqCategory"></faq>

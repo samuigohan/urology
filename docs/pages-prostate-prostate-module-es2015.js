@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\r\n    <div class=\"page-title\">Prostata</div>\r\n    <div class=\"page-menu\">\r\n        <a [routerLink]=\"['/prostate/general']\" [routerLinkActive]=\"['active']\">Građa i funkcija</a>\r\n        <a [routerLink]=\"['/prostate/cancer']\" [routerLinkActive]=\"['active']\">Karcinom</a>\r\n        <a [routerLink]=\"['/prostate/inflamation']\" [routerLinkActive]=\"['active']\">Upala</a>\r\n        <a [routerLink]=\"['/prostate/enlargement']\" [routerLinkActive]=\"['active']\">Beningno povećanje</a>\r\n    </div>\r\n    <div class=\"page-content\" *ngIf=\"html\" [innerHTML]=\"html\">\r\n    </div>\r\n</section>\r\n<faq [faqCategory]=\"faqCategory\"></faq>"
+module.exports = "<section>\r\n    <div class=\"page-title\">Prostata</div>\r\n    <div class=\"page-menu\">\r\n        <a [routerLink]=\"['/prostate/general']\" [routerLinkActive]=\"['active']\">Građa i funkcija</a>\r\n        <a [routerLink]=\"['/prostate/cancer']\" [routerLinkActive]=\"['active']\">Karcinom</a>\r\n        <a [routerLink]=\"['/prostate/inflammation']\" [routerLinkActive]=\"['active']\">Upala</a>\r\n        <a [routerLink]=\"['/prostate/enlargement']\" [routerLinkActive]=\"['active']\">Beningno povećanje</a>\r\n    </div>\r\n    <div class=\"page-content\" *ngIf=\"html\" [innerHTML]=\"html\">\r\n    </div>\r\n</section>\r\n<faq [faqCategory]=\"faqCategory\"></faq>"
 
 /***/ }),
 
@@ -142,7 +142,7 @@ const routes = [
         children: [
             { path: 'general', component: _prostate_component__WEBPACK_IMPORTED_MODULE_3__["Prostate"] },
             { path: 'cancer', component: _prostate_component__WEBPACK_IMPORTED_MODULE_3__["Prostate"] },
-            { path: 'inflamation', component: _prostate_component__WEBPACK_IMPORTED_MODULE_3__["Prostate"] },
+            { path: 'inflammation', component: _prostate_component__WEBPACK_IMPORTED_MODULE_3__["Prostate"] },
             { path: 'enlargement', component: _prostate_component__WEBPACK_IMPORTED_MODULE_3__["Prostate"] },
         ],
     },

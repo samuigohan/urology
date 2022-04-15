@@ -9,7 +9,7 @@ const routes: Routes = [
     children: [
       { path: 'general', component: Bladder },
       { path: 'cancer', component: Bladder },
-      { path: 'inflamation', component: Bladder },
+      { path: 'inflammation', component: Bladder },
       { path: 'stones', component: Bladder },
     ],
   },
