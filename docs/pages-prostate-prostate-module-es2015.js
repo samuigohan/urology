@@ -131,7 +131,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _prostate_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./prostate.component */ "./src/app/pages/prostate/prostate.component.ts");
+/* harmony import */ var src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/section.metadata */ "./src/app/section.metadata.ts");
+/* harmony import */ var _prostate_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./prostate.component */ "./src/app/pages/prostate/prostate.component.ts");
+
 
 
 
@@ -139,12 +141,12 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        component: _prostate_component__WEBPACK_IMPORTED_MODULE_3__["Prostate"],
+        component: _prostate_component__WEBPACK_IMPORTED_MODULE_4__["Prostate"],
         children: [
-            { path: 'general', component: _prostate_component__WEBPACK_IMPORTED_MODULE_3__["Prostate"] },
-            { path: 'cancer', component: _prostate_component__WEBPACK_IMPORTED_MODULE_3__["Prostate"] },
-            { path: 'inflammation', component: _prostate_component__WEBPACK_IMPORTED_MODULE_3__["Prostate"] },
-            { path: 'enlargement', component: _prostate_component__WEBPACK_IMPORTED_MODULE_3__["Prostate"] },
+            { path: 'general', component: _prostate_component__WEBPACK_IMPORTED_MODULE_4__["Prostate"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].prostate.general },
+            { path: 'cancer', component: _prostate_component__WEBPACK_IMPORTED_MODULE_4__["Prostate"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].prostate.cancer },
+            { path: 'inflammation', component: _prostate_component__WEBPACK_IMPORTED_MODULE_4__["Prostate"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].prostate.inflammation },
+            { path: 'enlargement', component: _prostate_component__WEBPACK_IMPORTED_MODULE_4__["Prostate"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].prostate.enlargement },
         ],
     },
 ];

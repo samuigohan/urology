@@ -131,7 +131,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _penis_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./penis.component */ "./src/app/pages/penis/penis.component.ts");
+/* harmony import */ var src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/section.metadata */ "./src/app/section.metadata.ts");
+/* harmony import */ var _penis_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./penis.component */ "./src/app/pages/penis/penis.component.ts");
+
 
 
 
@@ -139,14 +141,14 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        component: _penis_component__WEBPACK_IMPORTED_MODULE_3__["Penis"],
+        component: _penis_component__WEBPACK_IMPORTED_MODULE_4__["Penis"],
         children: [
-            { path: 'general', component: _penis_component__WEBPACK_IMPORTED_MODULE_3__["Penis"] },
-            { path: 'cancer', component: _penis_component__WEBPACK_IMPORTED_MODULE_3__["Penis"] },
-            { path: 'phimosis', component: _penis_component__WEBPACK_IMPORTED_MODULE_3__["Penis"] },
-            { path: 'frenulum', component: _penis_component__WEBPACK_IMPORTED_MODULE_3__["Penis"] },
-            { path: 'induratio', component: _penis_component__WEBPACK_IMPORTED_MODULE_3__["Penis"] },
-            { path: 'disfunction', component: _penis_component__WEBPACK_IMPORTED_MODULE_3__["Penis"] },
+            { path: 'general', component: _penis_component__WEBPACK_IMPORTED_MODULE_4__["Penis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].penis.general },
+            { path: 'cancer', component: _penis_component__WEBPACK_IMPORTED_MODULE_4__["Penis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].penis.cancer },
+            { path: 'phimosis', component: _penis_component__WEBPACK_IMPORTED_MODULE_4__["Penis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].penis.phimosis },
+            { path: 'frenulum', component: _penis_component__WEBPACK_IMPORTED_MODULE_4__["Penis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].penis.frenulum },
+            { path: 'induratio', component: _penis_component__WEBPACK_IMPORTED_MODULE_4__["Penis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].penis.induratio },
+            { path: 'disfunction', component: _penis_component__WEBPACK_IMPORTED_MODULE_4__["Penis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].penis.disfunction },
         ],
     },
 ];

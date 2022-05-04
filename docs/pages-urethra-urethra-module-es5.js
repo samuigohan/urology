@@ -132,7 +132,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _urethra_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./urethra.component */ "./src/app/pages/urethra/urethra.component.ts");
+/* harmony import */ var src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/section.metadata */ "./src/app/section.metadata.ts");
+/* harmony import */ var _urethra_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./urethra.component */ "./src/app/pages/urethra/urethra.component.ts");
+
 
 
 
@@ -140,11 +142,11 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [
     {
         path: '',
-        component: _urethra_component__WEBPACK_IMPORTED_MODULE_3__["Urethra"],
+        component: _urethra_component__WEBPACK_IMPORTED_MODULE_4__["Urethra"],
         children: [
-            { path: 'general', component: _urethra_component__WEBPACK_IMPORTED_MODULE_3__["Urethra"] },
-            { path: 'cancer', component: _urethra_component__WEBPACK_IMPORTED_MODULE_3__["Urethra"] },
-            { path: 'stones', component: _urethra_component__WEBPACK_IMPORTED_MODULE_3__["Urethra"] },
+            { path: 'general', component: _urethra_component__WEBPACK_IMPORTED_MODULE_4__["Urethra"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].urethra.general },
+            { path: 'cancer', component: _urethra_component__WEBPACK_IMPORTED_MODULE_4__["Urethra"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].urethra.cancer },
+            { path: 'stones', component: _urethra_component__WEBPACK_IMPORTED_MODULE_4__["Urethra"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].urethra.stones },
         ],
     },
 ];

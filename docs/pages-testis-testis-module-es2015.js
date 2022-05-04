@@ -131,7 +131,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _testis_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./testis.component */ "./src/app/pages/testis/testis.component.ts");
+/* harmony import */ var src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/section.metadata */ "./src/app/section.metadata.ts");
+/* harmony import */ var _testis_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./testis.component */ "./src/app/pages/testis/testis.component.ts");
+
 
 
 
@@ -139,15 +141,15 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        component: _testis_component__WEBPACK_IMPORTED_MODULE_3__["Testis"],
+        component: _testis_component__WEBPACK_IMPORTED_MODULE_4__["Testis"],
         children: [
-            { path: 'general', component: _testis_component__WEBPACK_IMPORTED_MODULE_3__["Testis"] },
-            { path: 'cancer', component: _testis_component__WEBPACK_IMPORTED_MODULE_3__["Testis"] },
-            { path: 'inflammation', component: _testis_component__WEBPACK_IMPORTED_MODULE_3__["Testis"] },
-            { path: 'hydrocele', component: _testis_component__WEBPACK_IMPORTED_MODULE_3__["Testis"] },
-            { path: 'varicocele', component: _testis_component__WEBPACK_IMPORTED_MODULE_3__["Testis"] },
-            { path: 'torsion', component: _testis_component__WEBPACK_IMPORTED_MODULE_3__["Testis"] },
-            { path: 'infertility', component: _testis_component__WEBPACK_IMPORTED_MODULE_3__["Testis"] },
+            { path: 'general', component: _testis_component__WEBPACK_IMPORTED_MODULE_4__["Testis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].testis.general },
+            { path: 'cancer', component: _testis_component__WEBPACK_IMPORTED_MODULE_4__["Testis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].testis.cancer },
+            { path: 'inflammation', component: _testis_component__WEBPACK_IMPORTED_MODULE_4__["Testis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].testis.inflammation },
+            { path: 'hydrocele', component: _testis_component__WEBPACK_IMPORTED_MODULE_4__["Testis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].testis.hydrocele },
+            { path: 'varicocele', component: _testis_component__WEBPACK_IMPORTED_MODULE_4__["Testis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].testis.varicocele },
+            { path: 'torsion', component: _testis_component__WEBPACK_IMPORTED_MODULE_4__["Testis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].testis.torsion },
+            { path: 'infertility', component: _testis_component__WEBPACK_IMPORTED_MODULE_4__["Testis"], data: src_app_section_metadata__WEBPACK_IMPORTED_MODULE_3__["SectionsMetadata"].testis.infertility },
         ],
     },
 ];
