@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SectionsMetadata } from 'src/app/section.metadata';
 import { Testis } from './testis.component';
 
 const routes: Routes = [
@@ -7,13 +8,13 @@ const routes: Routes = [
     path: '',
     component: Testis,
     children: [
-      { path: 'general', component: Testis },
-      { path: 'cancer', component: Testis },
-      { path: 'inflammation', component: Testis },
-      { path: 'hydrocele', component: Testis },
-      { path: 'varicocele', component: Testis },
-      { path: 'torsion', component: Testis },
-      { path: 'infertility', component: Testis },
+      { path: 'general', component: Testis, data: SectionsMetadata.testis.general },
+      { path: 'cancer', component: Testis, data: SectionsMetadata.testis.cancer },
+      { path: 'inflammation', component: Testis, data: SectionsMetadata.testis.inflammation },
+      { path: 'hydrocele', component: Testis, data: SectionsMetadata.testis.hydrocele },
+      { path: 'varicocele', component: Testis, data: SectionsMetadata.testis.varicocele },
+      { path: 'torsion', component: Testis, data: SectionsMetadata.testis.torsion },
+      { path: 'infertility', component: Testis, data: SectionsMetadata.testis.infertility },
     ],
   },
 ];

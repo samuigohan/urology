@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SectionsMetadata } from 'src/app/section.metadata';
 import { Urethra } from './urethra.component';
 
 const routes: Routes = [
@@ -7,9 +8,9 @@ const routes: Routes = [
     path: '',
     component: Urethra,
     children: [
-      { path: 'general', component: Urethra },
-      { path: 'cancer', component: Urethra },
-      { path: 'stones', component: Urethra },
+      { path: 'general', component: Urethra, data: SectionsMetadata.urethra.general },
+      { path: 'cancer', component: Urethra, data: SectionsMetadata.urethra.cancer },
+      { path: 'stones', component: Urethra, data: SectionsMetadata.urethra.stones },
     ],
   },
 ];
