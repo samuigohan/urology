@@ -7,11 +7,11 @@
 
 :host::ng-deep {
   .icon-list svg {
-    width: 64px;
-    height: 64px;
-    position: absolute;
-    top: 48px;
-    left: 68px;
+    width: 72px;
+    height: 72px;
+    top: 24px;
+    left: 64px;
+    position: absolute;    
     /*transform: translate(-75%, -50%);*/
     transition: top 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1), left 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1),
       width 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1), height 0.35s 0.3s cubic-bezier(0.67, 0.04, 0.22, 1);
@@ -25,8 +25,11 @@
     left: 16px;
 
     path {
-      stroke: $color-hl-sec;
-      fill: $color-hl-sec;
+      /*stroke: $color-hl-sec;
+      fill: $color-hl-sec;*/
+    }
+    .circle {
+      fill: $color-hl-sec !important;
     }
   }
 }
