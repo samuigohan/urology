@@ -13,6 +13,7 @@ export class AppComponent {
   constructor(router: Router) {
     router.events.subscribe((event: RouterEvent) => {
       if (event instanceof NavigationStart) {
+        $('.faq-content').scrollTop(0);
         if (event.url != "/") {
           this.subpage = true;
         }

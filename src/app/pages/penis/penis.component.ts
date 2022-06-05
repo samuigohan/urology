@@ -1,7 +1,8 @@
 import { Component } from "@angular/core";
 import { ApiService } from "src/app/api.service";
-import { Router, RouterEvent, NavigationStart, NavigationEnd } from "@angular/router";
+import { Router, RouterEvent, NavigationStart, NavigationEnd, ActivatedRoute } from "@angular/router";
 import * as $ from 'jquery';
+import { SEOService } from "src/app/seo.service";
 
 @Component({
     selector: 'penis',
@@ -15,12 +16,19 @@ export class Penis {
     public faqCategory: string = null;
 
     constructor(private api: ApiService,
-        private router: Router) {
+        private router: Router,
+        private activatedRoute: ActivatedRoute,
+        private seoService: SEOService) {
 
         router.events.subscribe((event: RouterEvent) => {
             if (event instanceof NavigationStart) {
                 this.getPage(event.url);
                 this.faqCategory = event.url;
+            }
+            else if (event instanceof NavigationEnd) {
+                var meta = (activatedRoute.children[0].data as any).value;
+                seoService.updateTitle(meta.title);
+                seoService.updateDescription(meta.description);
             }
         });
     }

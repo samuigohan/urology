@@ -12,21 +12,26 @@
 
   &.displayed {
     transform: translateX(-100%);
+
     .faq-button {
       opacity: 1;
     }
   }
 
   width: calc(100vw - 40px);
+
   @media screen and (min-width: 960px) {
     width: 80vw;
   }
+
   @media screen and (min-width: 1200px) {
     width: 70vw;
   }
+
   @media screen and (min-width: 1200px) {
     width: 60vw;
   }
+
   @media screen and (min-width: 1600px) {
     width: 50vw;
   }
@@ -47,6 +52,7 @@
     border-bottom-left-radius: 6px;
     line-height: 48px;
     text-align: center;
+
     &:hover {
       opacity: 1;
     }
@@ -75,5 +81,15 @@
     box-shadow: 0 4px 16px rgb(0 0 0 / 80%);
     max-height: 100%;
     overflow-y: auto;
+  }
+}
+
+:host::ng-deep {
+  .faq-content {
+    .list-title {
+      font-weight: bold;
+      margin-top: 48px;
+      margin-bottom: 24px;
+    }
   }
 }
