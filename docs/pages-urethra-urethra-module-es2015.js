@@ -25,20 +25,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var src_app_api_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/api.service */ "./src/app/api.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var src_app_seo_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/seo.service */ "./src/app/seo.service.ts");
+
 
 
 
 
 let Urethra = class Urethra {
-    constructor(api, router) {
+    constructor(api, router, activatedRoute, seoService) {
         this.api = api;
         this.router = router;
+        this.activatedRoute = activatedRoute;
+        this.seoService = seoService;
         this.html = null;
         this.faqCategory = null;
         router.events.subscribe((event) => {
             if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationStart"]) {
                 this.getPage(event.url);
                 this.faqCategory = event.url;
+            }
+            else if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationEnd"]) {
+                var meta = activatedRoute.children[0].data.value;
+                seoService.updateTitle(meta.title);
+                seoService.updateDescription(meta.description);
             }
         });
     }
@@ -54,7 +63,9 @@ let Urethra = class Urethra {
 };
 Urethra.ctorParameters = () => [
     { type: src_app_api_service__WEBPACK_IMPORTED_MODULE_2__["ApiService"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
+    { type: src_app_seo_service__WEBPACK_IMPORTED_MODULE_4__["SEOService"] }
 ];
 Urethra = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
